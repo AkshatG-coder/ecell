@@ -9,6 +9,7 @@ a{
 }
 li{
     list-style: none;
+    text-align: center;
 }
 h2{
     transition: 2s ;
@@ -30,12 +31,16 @@ p{
     display: flex;
 }
 #btn{
-    background-color: rgb(249, 175, 38);
+    background-color: rgb(254, 194, 84);
     height: 30px;
     padding: 5px;
     margin: 5px;
+    font-size: 15px;
     width: 65px;
     border-radius: 10px;
+    cursor: pointer;
+    border-color: brown;
+    transition: 1s;
 }
 h2:hover{
     /* font-size: xx-large; */
@@ -73,5 +78,15 @@ footer{
     }
 
 }
+#btn:hover{
+    border-color: red;
+    font-size: 18px;
+    background-color: rgb(245, 249, 0);
+    height: 39px;
+    width: 65px;
+
+}
+
+
 
 

@@ -1,4 +1,4 @@
-*{
+{
     margin: 0;
     padding: 0;
 
@@ -6,20 +6,23 @@
 a{
     text-decoration: none;
     color: black;
+    transition: 0.5s;
 }
 li{
     list-style: none;
-/*     text-align: center; */
+    
 }
 h2{
     transition: 2s ;
+    padding: 5px;
+    width: fit-content;
+    border-bottom: 2px solid black;
 }
 p{
     font-size: larger;
     padding: 10px;
 }
 .div1,.div2,.div3,.div4{
-    
     font-weight: 400;
     font-size: x-large;
     line-height: 40px;
@@ -31,15 +34,10 @@ p{
     display: flex;
 }
 #btn{
-    background-color: rgb(254, 194, 84);
-    height: 30px;
-    padding: 5px;
-    margin: 5px;
-    font-size: 15px;
-    width: 65px;
-    border-radius: 10px;
+    background: transparent;
+    border: 0;
+
     cursor: pointer;
-    border-color: brown;
     transition: 1s;
 }
 h2:hover{
@@ -48,43 +46,54 @@ h2:hover{
 }
 a:hover{
     text-decoration: underline;
+    color: blue;
 
 }
-footer{
-    background-color:wheat;
+
+section{
+    
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     width:100%;
+ 
+}
+footer{
+    background:linear-gradient(to right,rgb(10, 18, 89,0.7),rgb(0, 30, 255,0.2));
     position: absolute;
     bottom: 0;
+    width: 100%;
+
 }
+.copyright{
+    
+    text-align: center;
+}
+hr{
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: black;
+    width: 95%;
+}
+
 #ab{
     font-size: 32px;
     font-weight:400 ;
 }
 
 #search{
-    width: 250px;
+    width: 75%;
+    background: transparent;
+    outline: none;
+    border: 0;
+    font-size: large;
+    border-bottom: 2px solid black;
     height: 25px;
-    border-radius: 0px 10px 0px 10px;
+    color: black;
+    
 }
-@media screen and (max-width:600px){
-    footer,.div1,.div2,.div3,.div4{
-        width: 100%;
-        margin-bottom:10px;
-        font-size: small;
-        top:auto;
-
-    }
-
-}
-#btn:hover{
-    border-color: red;
-    font-size: 18px;
-    background-color: rgb(245, 249, 0);
-    height: 39px;
-    width: 65px;
-
+input::placeholder{
+    font-size: larger;
+    color: black;
 }
 
 
